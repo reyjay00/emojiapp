@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4029961E1F581CF800912A1D /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029961D1F581CF800912A1D /* DefinitionViewController.swift */; };
 		40521CA11F361C7500015D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40521CA01F361C7500015D32 /* AppDelegate.swift */; };
 		40521CA31F361C7500015D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40521CA21F361C7500015D32 /* ViewController.swift */; };
 		40521CA61F361C7500015D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40521CA41F361C7500015D32 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4029961D1F581CF800912A1D /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		40521C9D1F361C7500015D32 /* Emoji app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40521CA01F361C7500015D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40521CA21F361C7500015D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				40521CA01F361C7500015D32 /* AppDelegate.swift */,
 				40521CA21F361C7500015D32 /* ViewController.swift */,
+				4029961D1F581CF800912A1D /* DefinitionViewController.swift */,
 				40521CA41F361C7500015D32 /* Main.storyboard */,
 				40521CA71F361C7500015D32 /* Assets.xcassets */,
 				40521CA91F361C7500015D32 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40521CA31F361C7500015D32 /* ViewController.swift in Sources */,
+				4029961E1F581CF800912A1D /* DefinitionViewController.swift in Sources */,
 				40521CA11F361C7500015D32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				40521CB11F361C7500015D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
