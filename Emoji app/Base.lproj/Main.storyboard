@@ -74,6 +74,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="definitionLabel" destination="3c6-a2-5b0" id="I7Z-ZQ-f76"/>
                         <outlet property="emojiLabel" destination="LX7-xf-m7h" id="h78-P7-fg6"/>
                     </connections>
                 </viewController>
