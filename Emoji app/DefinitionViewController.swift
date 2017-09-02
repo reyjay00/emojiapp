@@ -31,11 +31,13 @@ class DefinitionViewController: UIViewController {
         if emoji == "😆" {
         definitionLabel.text = "A laughing face"
             categoryLabel.text = "Category: Animal"
-            birthYearLabale.text = "BirthYear: 20"
+            birthYearLabel.text = "BirthYear: 2011"
         }
         
         if emoji == "😎" {
             definitionLabel.text = "Sunglasses"
+            categoryLabel.text = "Category: Sunglasses"
+            birthYearLabel.text = "BirthYear: 2009"
         }
         
         if emoji == "😶" {

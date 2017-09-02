@@ -49,7 +49,40 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func makeEmojiArray() -> [Emoji] {
+        let emoji1 = Emoji()
+        emoji1.stringEmoji = "😆"
+        emoji1.birthYear = 2010
+        emoji1.category = "Smiley"
+        emoji1.definition = "Smiley face"
+        
+        let emoji2 = Emoji()
+        emoji2.stringEmoji = "😎"
+        emoji2.birthYear = 2016
+        emoji2.category = "Sunglasses"
+        emoji2.definition = "Smiley face with sunglasses"
+     
+        let emoji3 = Emoji()
+        emoji3.stringEmoji = "😶"
+        emoji3.birthYear = 2017
+        emoji3.category = "No mouth"
+        emoji3.definition = "Smiley with no mouth"
+        
+        let emoji4 = Emoji()
+        emoji4.stringEmoji = "😥"
+        emoji4.birthYear = 2018
+        emoji4.category = "Smiley no mouth"
+        emoji4.definition = "Smiley sad face (kinda no mouth)"
+        
+        let emoji5 = Emoji()
+        emoji5.stringEmoji = "😡"
+        emoji5.birthYear = 2019
+        emoji5.category = "Not smiley"
+        emoji5.definition = "ANgry face"
+        
 
+        
+    }
 
 }
 
