@@ -7,7 +7,7 @@
 //
 class Emoji {
     var stringEmoji = ""
-    var definition= ""
+    var definition = ""
     var category = ""
     var birthYear = 0
     

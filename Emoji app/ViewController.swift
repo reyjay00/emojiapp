@@ -12,13 +12,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var CoolTableView: UITableView!
     
-    var emojis = ["😆","😎","😶","😥","😡"]
+    var emojis : [Emoji] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         CoolTableView.dataSource = self
         CoolTableView.delegate = self
+        emojis = makeEmojiArray()
         
     }
     
@@ -29,7 +30,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell()
-        cell.textLabel?.text = emojis[indexPath.row]
+        let emoji = emojis[indexPath.row]
+        cell.textLabel?.text = emoji.stringEmoji
+        
         return cell
     }
 
@@ -42,7 +45,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let defVC = segue.destination as! DefinitionViewController
-        defVC.emoji = sender as! String
+        defVC.emoji = sender as! Emoji
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,7 +83,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         emoji5.category = "Not smiley"
         emoji5.definition = "ANgry face"
         
-
+        return [emoji1, emoji2, emoji3, emoji4, emoji5]
         
     }
 
